@@ -6,5 +6,5 @@ if a < b:
 else:
     i = b
 while (i % a != 0) or (i % b != 0):
-    i+=1
+    i += 1
 print(i)
