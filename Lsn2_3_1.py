@@ -6,10 +6,13 @@ a = int(input())
 b = int(input())
 c = int(input())
 d = int(input())
+#сначала  надо вывести  пустой  символ и отступ
 print('   \t', end='')
+#теперь  надо вывести  первую строку от c  до  d
 for j in range(c,(d + 1) ):
     print(j, '\t', end='')
 print()
+#а  теперь можно вывести остальную таблицу 
 for i in range(a, (b + 1)):
     print (i, end='')
     for j in range(c,(d + 1) ):
