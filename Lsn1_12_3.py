@@ -13,7 +13,20 @@
 a = float(input())
 b = float(input())
 op = input()
-# if (op == '+' or op == '-' or op == '/' or op == '*' or op == 'mod' or op == 'pov' or op == 'div'):
-# elif (b != 0 and (op != '/' or op != 'div')):
-print(a,op, b)
-
+if op == '+':
+    print (a + b)
+if op == '-':
+    print (a - b)
+if op == '*':
+    print (a * b)
+if op == 'pow':
+    print (a ** b)
+if (op == '/' or op == 'mod' or op == 'div') and (b != 0):
+    if op == '/':
+        print(a / b)
+    if op == 'mod':
+        print(a % b)
+    if op == 'div':
+        print(a // b)
+else:
+    if b ==0: print('Деление на 0!')
